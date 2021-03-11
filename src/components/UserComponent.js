@@ -14,7 +14,8 @@ const UserComponent = () => {
   }, []);
 
   return (
-    <div>
+    <div className="container mt-4">
+      <h2 className="p-4"> Get User from API</h2>
       {users.loading && <p>Loading....</p>}
       {users.length > 0 &&
         users.map((user) => {
